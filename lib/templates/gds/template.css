@@ -33,8 +33,7 @@
 
 .govuk-input:disabled, .form-control:disabled, .form-control[readonly] {
   background-color: #e9ecef;
-  opacity: 1;
-};
+  opacity: 1; }
 
 @media screen and (max-width: 639px) {
   #reorder {
@@ -100,3 +99,6 @@
   height: 100px;
   overflow-y: auto;
   overflow-x: hidden; }
+
+.govuk-select.auto-height {
+  height: auto; }
