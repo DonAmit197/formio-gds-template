@@ -1,4 +1,5 @@
-{% if (ctx.component.type !== 'container') { %}
+{% if (ctx.component.type !== 'hidden') { %}
+    {% if (ctx.component.type !== 'container') { %}
 <label
     class="
         {{ ctx.label.className }}
@@ -9,8 +10,9 @@
 >
     {{ ctx.t(ctx.component.label) }}
 </label>
-{% } else if (ctx.label.hidden !== true) { %}
+    {% } else if (ctx.label.hidden !== true) { %}
 <span class="govuk-body">
     {{ ctx.t(ctx.component.label) }}
 </span>
+    {% } %}
 {% } %}
