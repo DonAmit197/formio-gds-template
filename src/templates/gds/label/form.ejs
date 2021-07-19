@@ -1,5 +1,5 @@
 {% if (ctx.component.type !== 'hidden') { %}
-    {% if (ctx.component.type !== 'container') { %}
+    {% if (!['container', 'datagrid'].includes(ctx.component.type)) { %}
 <label
     class="
         {{ ctx.label.className }}
